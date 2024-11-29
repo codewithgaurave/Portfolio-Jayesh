@@ -59,7 +59,7 @@ body {
 
 /* Project Details Styling */
 .project-details {
-    height: 400px;
+    height: 560px;
     display: flex;
     /* flex-direction: column; */
     gap: 20px;
@@ -70,19 +70,41 @@ body {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
     transition: opacity 0.3s ease;
+
 }
 
 .project-card {
-    height: 350px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
     width: 50%;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 500px;
 }
 
+.project-card img{
+    height: 200px;
+    width: 50%;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-links a {
+    margin: 8px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+
 .project-card:hover {
-    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
