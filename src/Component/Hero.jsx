@@ -133,7 +133,7 @@ const Hero = () => {
           <h1 className="hero-title">
             Hi, I'm <span className="highlight">Jayesh Singh</span>
           </h1>
-          <p className="hero-description" style={{fontSize:"15px"}}>
+          <p className="hero-description">
             As a passionate developer, I believe in the power of continuous
             growth and the art of crafting exceptional digital experiences.
             Every project I work on is an opportunity to innovate, improve, and
