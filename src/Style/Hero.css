@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  height: 100vh;
+  background: linear-gradient(135deg, #f9f9f9, #e8f6ff);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 50%;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #2b2b2b;
+  margin-bottom: 1rem;
+  opacity: 0;
+}
+
+.highlight {
+  color: rgb(238, 102, 193);
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+  opacity: 0;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.cta-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(238, 102, 193);
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  /* transition: transform 0.3s ease, border-radius .3s ease-in-out; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn:hover {
+  background-color: rgb(238, 102, 193);
+  border-radius: 0px;
+  transform: translateY(-3px);
+}
+
+.cta-btn.secondary {
+  background-color: #333;
+}
+
+.cta-btn.secondary:hover {
+  background-color: #555;
+}
+
+.hero-illustration {
+  max-width: 40%;
+  z-index: 2;
+  position: relative;
+  rotate: -5deg;
+}
+
+.hero-illustration img{
+  height: 400px;
+  width: 400px;
+}
+
+.illustration {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.animated-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.shape {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.background-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: rgb(55, 124, 96);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+}
+
+.hexagon {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(155, 183, 189, 0.998);
+  clip-path: polygon(50% 0%, 100% 30%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.CircleImage {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: rgb(238, 102, 193);
+  position: absolute;
+  left: 40%;
+  top: -35px;
+  z-index: 5;
+}
