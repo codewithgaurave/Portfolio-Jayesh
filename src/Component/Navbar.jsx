@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../Style/Navbar.css';
+import resume from '../assets/resume.pdf';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -56,7 +57,9 @@ const Navbar = () => {
           <li>Skills</li>
           <li>Contact</li>
           <li>
+            <a href={resume} download>
             <button>Download Resume</button>
+            </a>
           </li>
         </ul>
       </div>
